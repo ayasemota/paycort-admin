@@ -13,7 +13,7 @@ export default function Preloader() {
   if (!isVisible) return null;
 
   return (
-    <div className="fixed inset-0 z-9999 flex items-center justify-center bg-white transition-opacity duration-1000 animate-fadeOut">
+    <div className="fixed inset-0 z-9999 flex items-center justify-center bg-black transition-opacity duration-1000 animate-fadeOut">
       <div className="relative flex flex-col items-center gap-6">
         <div className="relative animate-pulse">
           <Logo />

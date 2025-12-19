@@ -90,7 +90,7 @@ export default function AdminLogin() {
                 onChange={(e) => handleChange(index, e.target.value)}
                 onKeyDown={(e) => handleKeyDown(index, e)}
                 disabled={isSubmitting}
-                className="w-14 h-14 sm:w-16 sm:h-16 text-center text-2xl font-bold bg-white border-2 border-white rounded-xl focus:border-green-400 focus:bg-white/20 focus:scale-105 focus:outline-none transition-all duration-300 disabled:opacity-50"
+                className="w-14 h-14 sm:w-16 sm:h-16 text-center text-2xl font-bold bg-white/10 border-2 border-white/20 rounded-xl focus:border-green-400 focus:bg-white/20 focus:scale-105 focus:outline-none transition-all duration-300 disabled:opacity-50"
               />
             ))}
           </div>

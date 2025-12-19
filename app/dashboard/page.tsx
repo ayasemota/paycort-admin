@@ -3,8 +3,8 @@ import { useState, useEffect } from "react";
 import { collection, query, orderBy, onSnapshot } from "firebase/firestore";
 import { db } from "@/app/lib/firebase";
 import { useRouter } from "next/navigation";
-import Image from "next/image";
 import Preloader from "@/app/components/Preloader";
+import Logo from "../components/Logo";
 
 type WaitlistEntry = {
   id: string;
@@ -161,13 +161,7 @@ export default function AdminDashboard() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4 gap-4 flex items-center justify-between">
           <div className="flex flex-wrap items-center gap-4">
             <div className="flex items-center justify-center gap-4">
-              <Image
-                src="/logo.png"
-                alt="Company Logo"
-                width={40}
-                height={40}
-              />
-              <p className="font-bold text-2xl text-white">PAYCORT</p>
+              <Logo />
             </div>
             <div>
               <p className="text-sm font-medium text-green-200">
