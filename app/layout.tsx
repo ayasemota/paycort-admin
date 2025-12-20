@@ -11,7 +11,21 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "Paycort | Admin Portal",
-  description: "Built with Love by AY Asemota",
+  description: "Paycort Official Admin Panel",
+  openGraph: {
+    title: "Paycort | Admin Portal",
+    description: "Paycort Official Admin Panel",
+    siteName: "Paycort",
+    images: [
+      {
+        url: "/social-preview.png",
+        width: 1200,
+        height: 630,
+        alt: "Paycort Admin Preview",
+      },
+    ],
+    type: "website",
+  },
 };
 
 export default function RootLayout({
